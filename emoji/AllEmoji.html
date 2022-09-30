@@ -1,6 +1,8 @@
 <html>
 <head>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.0.2/list.min.js" integrity="sha512-MT5YyrGWqMGkIbwkVUZEWGrRDjlNx8loukEdFyzLo4s8INKVxnDQy2eFcpmnWGrFwJ+X8mRTQOJpWCayXz7+Og==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	
 <style>
 .aa { 
 	display: flex;
@@ -42,13 +44,19 @@
 	width: 100%;
 	font-family: consolas, monospace;
 }
-
+.fuzzy-search {
+	width: 90%;
+	padding: 20px;
+	margin:  20px;
+	border-radius: 5px;
+}	
 </style>
 
 
 
 </head>
 <body>
+	<input type="search" class="fuzzy-search" placeholder="fuzzy search!">
 
 
 <div class=aa>
@@ -4783,5 +4791,16 @@
 <div class=bb><p class=cc>&#x1FABD;</p><span class=dd>15.0</span><div class=info><span class=ee>wing </span><span class=ff>1FABD</span></div></div>
 <div class=bb><p class=cc>&#x1F6DC;</p><span class=dd>15.0</span><div class=info><span class=ee>wireless </span><span class=ff>1F6DC</span></div></div>
 </div>
+	
+	
+	
+<script>
+	
+var options = {
+    valueNames: [ 'ee', 'ff' ]
+};
+
+var emojiSearch = new List('aa', options);
+</script>
 </body>
 </html>
