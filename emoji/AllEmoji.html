@@ -42640,7 +42640,7 @@
 <script>
 var options = { valueNames: [ 'ee', 'ff' ], searchDelay: 2000, indexAsync: true };
 var EmojiList = new List('BigEmojiTable', options);
-$('.bb').lazyload(options);
+$('.bb').lazyload({ threshold: 200, trigger: "appear" });
 </script>
 </body>
 </html>
